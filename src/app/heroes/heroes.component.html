@@ -1,14 +1,34 @@
 <h2>Sonic Heroes</h2>
 
+
 <ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/heroes/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+  </li>
+</ul>
+
+
+
+
+
+
+<!-- DEAD CODE KEPT FOR EDUCATIONAL PURPOSES -->
+
+<!-- <ul class="heroes">
   <li *ngFor="let hero of heroes" 
   [class.selected]="hero === selectedHero"
   (click)="onSelect(hero)">
     <span class="badge">{{hero.id}}</span> {{hero.name}}
   </li>
-</ul>
+</ul> -->
 
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
+
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
+
+
 <!-- 
 <div *ngIf="selectedHero">
   <h2>{{selectedHero.name | uppercase}} Details</h2>

@@ -1,3 +1,7 @@
+// <!-- DEAD CODE KEPT FOR EDUCATIONAL PURPOSES -->
+
+
+
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
@@ -14,7 +18,7 @@ export class HeroesComponent implements OnInit {
   //   name: 'Windstorm'
   // };
 
-  selectedHero: Hero;
+  // selectedHero: Hero;
 
   // heroes = HEROES;
   heroes: Hero[];
